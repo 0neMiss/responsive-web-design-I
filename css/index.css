@@ -1,3 +1,266 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+/* Your code starts here! */
+a{
+	font-size: 20px;
+	padding-right: 60px;
+
+	color:lightgrey;
+	text-decoration: none;
+}
+h1{
+	text-align: center;
+	font-size: 100px;
+	box-sizing: border-box;
+	display:inline-block;
+}
+button{
+	background-color: Transparent;
+	border: black solid;
+	text-decoration: none;
+	text-align: center;
+	font-size: 20px;
+	height: 60px;
+	width: 200px;
+	margin-left: 80px;
+
+}
+hr{
+	background-color: black;
+}
+i{
+	text-align: center;
+}
+.logo{
+}
+.circleimage{
+margin-left: 100px;
+padding:60px;
+width: auto;
+}
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+.hero{
+padding: 40px;
+width: auto;
+display: flex;
+
+}
+.hero-text{
+width: 48%;
+text-align: center;
+display: flex;
+flex-direction: column;
+
+}
+.aboveimage{
+width: 1000px;
+display: flex;
+}
+.above_left{
+height: 49%;
+width: 39%;
+
+}
+.above_right{
+	height: 49%;
+	width: 39%;
+
+}
+.belowimage{
+	padding-bottom: 100px;
+	display: flex;
+}
+.below_left{
+	height: 49%;
+	width: 29%;
+}
+.below_middle{
+	height: 49%;
+	width: 29%;
+}
+.below_right{
+	height: 49%;
+	width: 29%;
+}
+.belowimage{
+width: 1000px;
+}
+.navigation{
+	display: flex;
+	align-items: flex-end;
+}
+.middle-img{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+
+@media (max-width: 800px){
+	button{
+	margin:0;
+	}
+
+
+.circleimage{
+	display: none;
+}
+.copyright{
+	width: 800px;
+	text-align: center;
+}
+.navigation{
+	width:800px;
+}
+.image_nav{
+	display: block;
+	align-items: center;
+
+}
+.logo{
+	margin-left: 325px;
+}
+.hero-text{
+	width:100%;
+	align-items: center;
+}
+.middle_img{
+	width:100%;
+}
+}
+
+
+@media (max-width: 500px){
+	a{
+		text-align: center;
+		padding: 10px 0px;
+
+	}
+	address{
+		padding: 0 10px;
+	}
+	a:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid lightgrey;
+		width: 500px;
+		padding: 10px 0px;
+	}
+
+
+
+	.container{
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.above_right, .above_left, .below_left, .below_right, .below_middle{
+padding-top: 50px;
+width:98%
+
+	}
+	.aboveimage, .belowimage{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width:500px;
+	}
+
+	.circleimage{
+		display: none;
+	}
+	.middle-img{
+		width: 100%
+	}
+	.navigation{
+		flex-direction: column;
+		align-items: center;
+		width:500px;
+	}
+	.image_nav{
+		display: block;
+
+	}
+	.logo{
+			order: -1;
+			margin-left: 165px;
+			display:block
+	}
+.logo:after{
+	content: " ";
+	display: block;
+	border-bottom: 1px solid lightgrey;
+	width: 500px;
+	padding: 10px 0px;
+}
+.copyright{
+	text-align: left;
+}
+
+}
